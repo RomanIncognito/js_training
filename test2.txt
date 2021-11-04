@@ -1,1 +1,2 @@
 text in test2
+addning new line to file
