@@ -1,3 +1,8 @@
 <?php
-echo 5 + 3;
+function test(){
+    static $count = 0;
+    echo $count;
+    $count += 1;
+}
+echo $_SERVER;
 ?>
