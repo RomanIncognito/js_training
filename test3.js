@@ -1,5 +1,10 @@
-let my_obj = {"a":[1,2,3]}
+function isPrime(num) {
+  for (let i = 2; i < num; i += 1){
+    if (num % i == 0){
+      return false
+    }
+  }
+  return true
+}
 
-
-
-console.log(my_obj["a"][0])
+console.log(isPrime(1))
