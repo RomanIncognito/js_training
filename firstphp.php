@@ -1,8 +1,6 @@
 <?php
-function test(){
-    static $count = 0;
-    echo $count;
-    $count += 1;
+$first = FALSE;
+if ($first == TRUE OR $name == "Roman") {
+    echo "name is not checked";
 }
-echo $_SERVER;
 ?>
