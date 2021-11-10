@@ -1,5 +1,8 @@
-a = "-1000"
-b = -1000
+function persistence(num) {
+    while(~~(num/10) > 0){
+      num = num.toString().split("").reduce((x,y)=>x*y)
+      console.log(num)
+    }
+  }
 
-if (a == b ){console.log("== works")}
-if (a === b ){console.log("=== works")}
+persistence(27)

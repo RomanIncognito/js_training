@@ -1,11 +1,13 @@
 <?php
-    $the_string = "Roman Nester Vasyl";
-    $the_list = explode(" ", $the_string);
-    foreach ($the_list as $k => $v){
-        echo $v;
+    function capevery($input_string){
+        $temp_list = explode(" ", $input_string);
+        foreach($temp_list as $k => $v){
+            $t = strtolower($v);
+            $temp = str_split($t);
+            $temp[0] = strtoupper($temp[0]);
+            $temp_list[$k] = join($temp);
+        }
     }
-    $the_list2 = str_split($the_string, 3);
-    foreach($the_list2 as $k => $v){
-        echo $v."\n";
-    }
+
+    strtolower("something");
 ?>
