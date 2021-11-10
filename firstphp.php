@@ -1,13 +1,26 @@
 <?php
-    function capevery($input_string){
-        $temp_list = explode(" ", $input_string);
-        foreach($temp_list as $k => $v){
-            $t = strtolower($v);
-            $temp = str_split($t);
-            $temp[0] = strtoupper($temp[0]);
-            $temp_list[$k] = join($temp);
-        }
-    }
+class Translate
+{
+    public $name, $age;
 
-    strtolower("something");
+    public function __construct(string $iname, int $iage)
+    {
+        $this->name = $iname;
+        $this->age = $iage;
+    }
+    
+    const ENGLISH =0;
+    const SPANISH =1;
+    const FRENCH  =2;
+    const GERMAN  =3;
+
+    static function lookup()
+    {
+        return self::SPANISH;
+    }
+}
+
+    echo Translate::lookup();
+    $my_translate = new Translate("Roman", 25);
+    print_r($my_translate);
 ?>
