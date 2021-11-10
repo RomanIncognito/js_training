@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
     function capevery($input_string){
         $temp_list = explode(" ", $input_string);
         foreach($temp_list as $k => $v){
@@ -10,4 +11,10 @@
     }
 
     strtolower("something");
+=======
+$first = FALSE;
+if ($first == TRUE OR $name == "Roman") {
+    echo "name is not checked";
+}
+>>>>>>> 1cee6d01159e33783aedc445a2254ed65e485959
 ?>
