@@ -21,6 +21,8 @@ class Translate
 }
 
     echo Translate::lookup();
+    echo Translate::lookup();
+    echo "\n";
     $my_translate = new Translate("Roman", 25);
     print_r($my_translate);
 ?>
